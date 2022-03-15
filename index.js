@@ -51,10 +51,11 @@ and at least one arrow function
  to place the values from evens and odds into an array 
  and display the values on a html screen in numerical order*/
 const numbers = [...evens,...odds];
+console.log(numbers);
 
-//let sortNumbers = numbers.map(numbSort)
+numbers.sort((a,b) => a - b)
+console.log(numbers);
 
- numbSort = (a,b) => numbers.sort;
-
-document.getElementById("numbs").innerHTML = numbers.map(sort);
-
+function list () {
+document.getElementById("numbs").innerHTML = numbers.map();
+}
